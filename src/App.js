@@ -1,10 +1,13 @@
 import "./styles.css";
 
 function Item({ name, isChecked }) {
-  if (isChecked) {
-    return <li> {name}✔</li>;
-  }
-  return <li> {name} </li>;
+  // return <li>{isChecked ? name + "✔" : <del> {name} </del>}</li>;
+  return (
+    <li>
+      {name}
+      {isChecked && "✔"}
+    </li>
+  );
 }
 
 export default function FoodList() {
@@ -15,7 +18,7 @@ export default function FoodList() {
         <ul>
           <Item isChecked={true} name="Bacon, Egg & Cheese Biscuit" />
           <Item isChecked={true} name="Sausage Biscuit " />
-          <Item isChecked={true} name="Hotcakes" />
+          <Item isChecked={false} name="Hotcakes" />
         </ul>
       </div>
     </section>
