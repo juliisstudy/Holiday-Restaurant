@@ -1,6 +1,9 @@
 import "./styles.css";
 import Breakfast from "./BreakfastList";
 import LunchList from "./LunchList";
+import Interaction from "./Interaction";
+
+import { useState } from "react";
 
 function Item({ name, isChecked }) {
   // return <li>{isChecked ? name + "✔" : <del> {name} </del>}</li>;
@@ -31,6 +34,10 @@ export default function FoodList() {
         <div className="Demo">
           <h1> Filter Lists</h1>
           <LunchList />
+        </div>
+        <div className="Demo">
+          <h1>Interaction</h1>
+          <Interaction />
         </div>
       </div>
     </section>
