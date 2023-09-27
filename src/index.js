@@ -8,7 +8,7 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <div class="jumbotron text-center">
-      <h1>My First Bootstrap Page</h1>
+      <h1>Happy Meal Restaurant</h1>
       <App />
     </div>
   </StrictMode>,

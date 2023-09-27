@@ -8,5 +8,11 @@ const breakfast = [
 
 export default function Breakfast() {
   const listItems = breakfast.map((breakfastEach) => <li>{breakfastEach}</li>);
-  return <ul>{listItems}</ul>;
+  return (
+    <div>
+      <h2> Rendering Lists</h2>
+
+      <ul>{listItems}</ul>
+    </div>
+  );
 }
