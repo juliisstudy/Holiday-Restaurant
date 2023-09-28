@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(217, 225, 241);
+  background-color: #ffffff;
   font-size: medium;
   color: rgb(58, 52, 45);
 }
@@ -9,7 +9,7 @@ h1 {
     Petit Formal Script,
     Georgia,
     "Times New Roman",
-    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    serif;
   padding-bottom: 12px;
   text-shadow: 2px 1px 2px rgb(255, 255, 255);
 }
@@ -20,34 +20,67 @@ h1 {
 }
 
 h2 {
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: Georgia, "Times New Roman", serif;
   padding-bottom: 12px;
   text-shadow: 2px 1px 2px rgb(255, 255, 255);
 }
 /*Special block*/
 .special-block {
-  background-color: aliceblue;
-  border: 1px solid rgb(192, 192, 192);
-  box-shadow: 5px 2px 2px rgb(219, 219, 219);
+  padding: 15px;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
+.menuList {
+  background-color: aliceblue;
+  box-shadow: 5px 2px 2px rgb(219, 219, 219);
+}
+.imageSection {
+}
 .App {
   font-family: sans-serif;
   text-align: center;
 }
-.Demo {
-  float: left;
-  width: 100%;
-  border: 2px solid black;
-}
+
 ul {
   text-align: left;
 }
 
+li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 .border {
   border: 1px solid rgb(204, 204, 204);
   box-shadow: 5px 2px 2px rgb(219, 219, 219);
+}
+
+button {
+  background-color: aliceblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: none;
+  color: rgb(98, 116, 133);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+p {
+  line-height: 40px;
+}
+
+.imageRef {
+  text-align: left;
+  margin-left: 30px;
 }

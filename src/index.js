@@ -9,6 +9,7 @@ root.render(
   <StrictMode>
     <div class=" text-center">
       <h1>Holiday Restaurant</h1>
+      <hr className="headerLine" />
       <App />
     </div>
   </StrictMode>,

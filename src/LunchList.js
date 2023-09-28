@@ -3,17 +3,17 @@ import { lunchMenu } from "./data";
 export default function LunchList() {
   const lunchForTwo = lunchMenu.filter((lunch) => lunch.price === 2);
   const listItem = lunchForTwo.map((lunch) => (
-    <li>
+    <li className="list-group-item">
       <p>
         {lunch.name} {"$" + lunch.price}
       </p>
     </li>
   ));
   return (
-    <div>
-      <h2> Filter Lists</h2>
+    <div className="special-block">
+      <h2> Value Meal</h2>
 
-      <ul>{listItem}</ul>
+      <ul className="list-group">{listItem}</ul>
     </div>
   );
 }

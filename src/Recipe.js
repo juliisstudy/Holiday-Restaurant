@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { lunchMenu } from "./data.js";
+import { getImageSrc, getImageRef } from "./utils.js";
 
 export default function Recipe() {
   const [index, setIndex] = useState(0);
@@ -22,16 +23,27 @@ export default function Recipe() {
 
   return (
     <>
-      <button onClick={handleNextClick}>Next</button>
+      <img
+        className="image"
+        src={getImageSrc(lunch.name)}
+        alt={lunch.name}
+        width={700}
+        height={500}
+      />
+      <p className="imageRef">
+        <i>{getImageRef(lunch.imgRef)}</i>
+      </p>
       <h2>
         <i>{lunch.name}</i>
       </h2>
-      <h3>
+      <h4>
         ({index + 1} of {lunchMenu.length})
-      </h3>
+      </h4>
       <button onClick={handleShowMore}>
         {showMore ? "Hide" : "show"} recipe
       </button>
+      <button onClick={handleNextClick}>Next</button>
+
       {showMore && <p> {lunch.recipe}</p>}
     </>
   );

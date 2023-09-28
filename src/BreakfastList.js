@@ -7,12 +7,13 @@ const breakfast = [
 ];
 
 export default function Breakfast() {
-  const listItems = breakfast.map((breakfastEach) => <li>{breakfastEach}</li>);
+  const listItems = breakfast.map((breakfastEach) => (
+    <li className="list-group-item">{breakfastEach}</li>
+  ));
   return (
     <div className="special-block">
-      <h2> Rendering Lists</h2>
-
-      <ul>{listItems}</ul>
+      <h2> Main</h2>
+      <ul className="list-group">{listItems}</ul>
     </div>
   );
 }
