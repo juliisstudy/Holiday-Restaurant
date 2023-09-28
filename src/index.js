@@ -7,8 +7,8 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <div class="jumbotron text-center">
-      <h1>Happy Meal Restaurant</h1>
+    <div class=" text-center">
+      <h1>Holiday Restaurant</h1>
       <App />
     </div>
   </StrictMode>,

@@ -9,7 +9,7 @@ const breakfast = [
 export default function Breakfast() {
   const listItems = breakfast.map((breakfastEach) => <li>{breakfastEach}</li>);
   return (
-    <div>
+    <div className="special-block">
       <h2> Rendering Lists</h2>
 
       <ul>{listItems}</ul>

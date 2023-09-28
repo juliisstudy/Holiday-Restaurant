@@ -10,7 +10,7 @@ export default function FoodList() {
     <section>
       <div className="App container">
         <div className="row">
-          <div className=" border col-sm-4">
+          <div className="col-sm-4">
             <SpecialMeal />
             <Breakfast />
             <LunchList />

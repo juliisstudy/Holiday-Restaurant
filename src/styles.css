@@ -1,18 +1,28 @@
 body {
-  background-color: rgb(241, 231, 217);
+  background-color: rgb(217, 225, 241);
+  font-size: medium;
+  color: rgb(58, 52, 45);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-family:
-    "Petit Formal Script",
+    Petit Formal Script,
     Georgia,
     "Times New Roman",
     serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  padding-bottom: 12px;
+  text-shadow: 2px 1px 2px rgb(255, 255, 255);
+}
+
+h1 {
+  padding: 30px;
+  font-size: 60px;
+}
+/*Special block*/
+.special-block {
+  background-color: aliceblue;
+  border: 1px solid rgb(192, 192, 192);
+  box-shadow: 5px 2px 2px rgb(219, 219, 219);
 }
 
 .App {
@@ -25,9 +35,10 @@ h6 {
   border: 2px solid black;
 }
 ul {
-  float: left;
   text-align: left;
 }
+
 .border {
-  border: 1px solid gray;
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: 5px 2px 2px rgb(219, 219, 219);
 }
