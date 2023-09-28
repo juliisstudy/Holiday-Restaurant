@@ -18,6 +18,15 @@ h1 {
   padding: 30px;
   font-size: 60px;
 }
+
+h2 {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  padding-bottom: 12px;
+  text-shadow: 2px 1px 2px rgb(255, 255, 255);
+}
 /*Special block*/
 .special-block {
   background-color: aliceblue;
