@@ -3,6 +3,10 @@ body {
   font-size: medium;
   color: rgb(58, 52, 45);
 }
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
 
 h1 {
   font-family:
@@ -12,9 +16,6 @@ h1 {
     serif;
   padding-bottom: 12px;
   text-shadow: 2px 1px 2px rgb(255, 255, 255);
-}
-
-h1 {
   padding: 30px;
   font-size: 60px;
 }
@@ -42,12 +43,6 @@ hr {
 .menuList {
   background-color: aliceblue;
   box-shadow: 5px 2px 2px rgb(219, 219, 219);
-}
-.imageSection {
-}
-.App {
-  font-family: sans-serif;
-  text-align: center;
 }
 
 ul {
@@ -83,4 +78,22 @@ p {
 .imageRef {
   text-align: left;
   margin-left: 30px;
+}
+
+.image {
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  max-height: 500px;
+}
+.ingredients {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 20px;
+}
+.text-description {
+  margin-top: -10px;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 11pt;
+  color: grey;
 }

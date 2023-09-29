@@ -3,10 +3,11 @@ export default function SpecialMeal() {
     <div className="special-block">
       <h2>Today Specials</h2>
       <ul className="list-group">
-        <Item isChecked={true} name="Bacon, Egg & Cheese Biscuit" />
-        <Item isChecked={true} name="Sausage Biscuit " />
-        <Item isChecked={false} name="Hotcakes" />
+        <Item isChecked={true} name="Grilled Pork Loin Kebabs" />
+        <Item isChecked={true} name="Grilled Chicken Breast" />
+        <Item isChecked={false} name="Sushi-Sashimi Combination" />
       </ul>
+      <p className="text-description"> ✔ Meals are available</p>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import "./styles.css";
-import Breakfast from "./BreakfastList";
+import Header from "./Header";
+import MainDish from "./MainDish";
 import LunchList from "./LunchList";
 import Recipe from "./Recipe";
 import SpecialMeal from "./SpecialMeal";
@@ -8,11 +9,12 @@ export default function FoodList() {
   return (
     <section>
       <div className="App container">
+        <Header headerText="Holiday Restaurant" />
         <div className="row">
           <div className="col-sm-4 menuList">
             <SpecialMeal />
             <hr />
-            <Breakfast />
+            <MainDish />
             <hr />
             <LunchList />
           </div>

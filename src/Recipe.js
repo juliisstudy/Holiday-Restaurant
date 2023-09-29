@@ -23,13 +23,7 @@ export default function Recipe() {
 
   return (
     <>
-      <img
-        className="image"
-        src={getImageSrc(lunch.name)}
-        alt={lunch.name}
-        width={700}
-        height={500}
-      />
+      <img className="image" src={getImageSrc(lunch.name)} alt={lunch.name} />
       <p className="imageRef">
         <i>{getImageRef(lunch.imgRef)}</i>
       </p>
@@ -40,11 +34,11 @@ export default function Recipe() {
         ({index + 1} of {lunchMenu.length})
       </h4>
       <button onClick={handleShowMore}>
-        {showMore ? "Hide" : "show"} recipe
+        {showMore ? "Hide" : "show"} ingredients
       </button>
       <button onClick={handleNextClick}>Next</button>
 
-      {showMore && <p> {lunch.recipe}</p>}
+      {showMore && <p className="ingredients"> {lunch.ingredients}</p>}
     </>
   );
 }
