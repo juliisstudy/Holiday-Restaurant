@@ -22,7 +22,7 @@ h1 {
 
 h2 {
   font-family: Georgia, "Times New Roman", serif;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
   text-shadow: 2px 1px 2px rgb(255, 255, 255);
 }
 /*Special block*/
@@ -69,6 +69,12 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: rgb(130, 175, 234);
+  color: #ffffff;
 }
 
 p {
@@ -96,4 +102,16 @@ p {
   text-align: left;
   font-size: 11pt;
   color: grey;
+}
+.add-order {
+  margin-left: 10px;
+}
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+input {
+  font-size: 20px;
 }

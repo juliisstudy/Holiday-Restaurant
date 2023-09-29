@@ -4,6 +4,7 @@ import MainDish from "./MainDish";
 import LunchList from "./LunchList";
 import Recipe from "./Recipe";
 import SpecialMeal from "./SpecialMeal";
+import Order from "./OrderList/Order";
 
 export default function FoodList() {
   return (
@@ -18,8 +19,9 @@ export default function FoodList() {
             <hr />
             <LunchList />
           </div>
-          <div className=" border col-sm-8 imageSection">
+          <div className="  col-sm-8 imageSection">
             <Recipe />
+            <Order />
           </div>
         </div>
       </div>

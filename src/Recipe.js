@@ -22,7 +22,7 @@ export default function Recipe() {
   let lunch = lunchMenu[index];
 
   return (
-    <>
+    <div className="border special-block">
       <img className="image" src={getImageSrc(lunch.name)} alt={lunch.name} />
       <p className="imageRef">
         <i>{getImageRef(lunch.imgRef)}</i>
@@ -34,11 +34,11 @@ export default function Recipe() {
         ({index + 1} of {lunchMenu.length})
       </h4>
       <button onClick={handleShowMore}>
-        {showMore ? "Hide" : "show"} ingredients
+        {showMore ? "Hide" : "Show"} Ingredients
       </button>
       <button onClick={handleNextClick}>Next</button>
 
       {showMore && <p className="ingredients"> {lunch.ingredients}</p>}
-    </>
+    </div>
   );
 }
