@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/holiday-restaurant/static/css/main.16262a00.css",
+    "main.js": "/holiday-restaurant/static/js/main.40becd37.js",
+    "index.html": "/holiday-restaurant/index.html",
+    "main.16262a00.css.map": "/holiday-restaurant/static/css/main.16262a00.css.map",
+    "main.40becd37.js.map": "/holiday-restaurant/static/js/main.40becd37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16262a00.css",
+    "static/js/main.40becd37.js"
+  ]
+}
