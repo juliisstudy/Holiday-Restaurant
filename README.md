@@ -8,6 +8,9 @@ This project is built using CodeSandbox, to view the project, please visit <a hr
 
 ![](HolidayRestaurant.png)
 
+<br/>
+
+
 ## About the Project
 I implemented the Holiday Restaurant website for learning and practicing React.js. It contains several sections. 
 - **Today Special** <br/>
