@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { lunchMenu } from "./data.js";
-import { getImageSrc, getImageRef } from "./utils.js";
+import { getImageSrc,getImageRef } from "./utils.js";
 
 export default function Recipe() {
   const [index, setIndex] = useState(0);
@@ -42,3 +42,4 @@ export default function Recipe() {
     </div>
   );
 }
+

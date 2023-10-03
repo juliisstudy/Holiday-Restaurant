@@ -1,6 +1,7 @@
 export function getImageSrc(lunchName) {
-  return "./src/" + lunchName + ".jpg";
+  return require("./image/" + lunchName + ".jpg");
 }
+
 
 export function getImageRef(name) {
   return "Thank you for the image from " + name +".";
