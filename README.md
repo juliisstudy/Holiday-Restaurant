@@ -1,8 +1,7 @@
 
 <h1 align="center" id="top">Holiday Restaurant website</h1>
 <br/>
-I implemented the Holiday Restaurant website for learning and practicing React.js. <br/>
-This project is built using CodeSandbox, to view the project, please visit <a href="https://juliisstudy.github.io/Holiday-Restaurant/">Demo</a>.
+I implemented the <a href="https://juliisstudy.github.io/Holiday-Restaurant/">Holiday Restaurant</a> website for learning and practicing React.js.
 <br/>
 <br/>
 
