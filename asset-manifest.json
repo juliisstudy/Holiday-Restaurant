@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/holiday-restaurant/static/css/main.16262a00.css",
-    "main.js": "/holiday-restaurant/static/js/main.40becd37.js",
+    "main.js": "/holiday-restaurant/static/js/main.07f4f31a.js",
+    "static/media/Sushi-Sashimi Combination.jpg": "/holiday-restaurant/static/media/Sushi-Sashimi Combination.658de32e1b4efd316660.jpg",
+    "static/media/Meatball Subs.jpg": "/holiday-restaurant/static/media/Meatball Subs.6fba3f4ca3d577c157a1.jpg",
+    "static/media/Beef Stuffed Poblano.jpg": "/holiday-restaurant/static/media/Beef Stuffed Poblano.24c00986050c9c6e3e32.jpg",
     "index.html": "/holiday-restaurant/index.html",
     "main.16262a00.css.map": "/holiday-restaurant/static/css/main.16262a00.css.map",
-    "main.40becd37.js.map": "/holiday-restaurant/static/js/main.40becd37.js.map"
+    "main.07f4f31a.js.map": "/holiday-restaurant/static/js/main.07f4f31a.js.map"
   },
   "entrypoints": [
     "static/css/main.16262a00.css",
-    "static/js/main.40becd37.js"
+    "static/js/main.07f4f31a.js"
   ]
 }
