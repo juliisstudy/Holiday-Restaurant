@@ -1,17 +1,40 @@
-export default ProductTable({dishes}){
-    const rows = [];
+function CategoryRow({ category }) {
+  return (
+    <tr>
+      <th>
+        {category}
+      </th>
+    </tr>
+  );
+}
+
+
+function DishRow({ dish }) {
+
+  return (
+    <tr>
+      <td>{dish.name}</td>
+      <td>{dish.price}</td>
+    </tr>
+  );
+}
+
+export default function ProductTable({products}){
     
-    dishes.forEach((dish)=>{
-        if(dish.categroy!==null){
-            rows.push(
-                <CategroyRow/>
+    const rows = [];
+    let lastCategory = null;
+
+    products.forEach((product) => {
+         if(product.category!== lastCategory){
+             rows.push(
+                 <CategoryRow category={product.category} key={product.category}/>
             );
-        }
+         }
         rows.push(
-            <DishRow/>
-        )
-    }
-    )
+            <DishRow dish={product} key={product.name}/>
+        );
+        lastCategory = product.category;
+    });
 
     return(
         <div>
@@ -25,24 +48,5 @@ export default ProductTable({dishes}){
                 <tbody>{rows}</tbody>
             </table>
         </div>
-    )
-}
-
-function CategroyRow({categroy}){
-    return(
-        <tr>
-            <th>{categroy}</th>
-        </tr>
-    )
-}
-
-function DishRow({dish}){
-    const name = dish.stocked? dish.name:
-    <del>{dish.name}</del>
-    return(
-        <tr>
-            <td>{name}</td>
-            <td>{dish.price}</td>
-        </tr>
-    )
+    );
 }

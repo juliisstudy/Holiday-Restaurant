@@ -5,6 +5,9 @@ import LunchList from "./LunchList";
 import Recipe from "./Recipe";
 import SpecialMeal from "./SpecialMeal";
 import Order from "./OrderList/Order";
+import ProductListFilter from "./productList/ProductListFilter";
+import {menuData} from "./productList/menuData.js";
+
 
 export default function FoodList() {
   return (
@@ -22,6 +25,7 @@ export default function FoodList() {
           <div className="  col-sm-8 imageSection">
             <Recipe />
             <Order />
+            <ProductListFilter dishes={menuData}/>
           </div>
         </div>
       </div>
