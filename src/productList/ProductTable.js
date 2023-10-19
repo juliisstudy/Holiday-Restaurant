@@ -8,9 +8,7 @@ function CategoryRow({ category }) {
   );
 }
 
-
 function DishRow({ dish }) {
-
   return (
     <tr>
       <td>{dish.name}</td>
@@ -19,12 +17,18 @@ function DishRow({ dish }) {
   );
 }
 
-export default function ProductTable({products}){
+export default function ProductTable({products,filterText,isAvailable}){
     
     const rows = [];
     let lastCategory = null;
-
-    products.forEach((product) => {
+    
+    products.forEach((product)=>{
+      if(product.name.toLowerCase().indexOf(filterText.toLowerCase())===-1){
+        return;
+      }
+      if(isAvailable && !product.stocked){
+        return;
+      }
          if(product.category!== lastCategory){
              rows.push(
                  <CategoryRow category={product.category} key={product.category}/>
@@ -50,3 +54,4 @@ export default function ProductTable({products}){
         </div>
     );
 }
+
