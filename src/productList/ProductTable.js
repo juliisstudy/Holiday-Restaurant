@@ -42,13 +42,8 @@ export default function ProductTable({products,filterText,isAvailable}){
 
     return(
         <div>
-            <table>
-            <thead>
-                <tr>
-                    <td>Name</td>
-                    <td>Price</td>
-                </tr>
-            </thead>
+            <table class="table">
+          
                 <tbody>{rows}</tbody>
             </table>
         </div>

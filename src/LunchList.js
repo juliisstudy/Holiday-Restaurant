@@ -1,11 +1,9 @@
-import { lunchMenu } from "./data";
-
-export default function LunchList() {
-  const lunchForTwo = lunchMenu.filter((lunch) => lunch.price === 20);
+export default function LunchList({dishes}) {
+  const lunchForTwo = dishes.filter((lunch) => lunch.price === 20);
   const listItem = lunchForTwo.map((lunch) => (
-    <li className="list-group-item">
-      <p>
-        {lunch.name} {"$" + lunch.price}
+    <li className="list-group-item" >
+      <p key={lunch.name}>
+        {lunch.name} {"$" + lunch.price} //fix later
       </p>
     </li>
   ));
