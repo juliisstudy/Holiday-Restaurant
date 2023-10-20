@@ -6,7 +6,7 @@ import Recipe from "./Recipe";
 import SpecialMeal from "./SpecialMeal";
 import Order from "./OrderList/Order";
 import ProductListFilter from "./productList/ProductListFilter";
-import {menuData} from "./productList/menuData.js";
+import { lunchMenu } from "./data.js";
 
 
 export default function FoodList() {
@@ -20,12 +20,13 @@ export default function FoodList() {
             <hr />
             <MainDish />
             <hr />
-            <LunchList />
+            <LunchList dishes={lunchMenu}/>
+            <ProductListFilter dishes={lunchMenu}/>
+
           </div>
-          <div className="  col-sm-8 imageSection">
+          <div className="col-sm-8 imageSection">
             <Recipe />
             <Order />
-            <ProductListFilter dishes={menuData}/>
           </div>
         </div>
       </div>

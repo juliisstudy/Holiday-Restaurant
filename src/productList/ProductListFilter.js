@@ -6,8 +6,8 @@ export default function ProductListFilter({dishes}){
     const [isAvailable, setAvailable] = useState(false);
 
     return (
-        <div>
-            <h1>Product</h1>
+        <div className="">
+            <h2>Product</h2>
             <SearchBar filterText={filterText}
                         isAvailable={isAvailable}
                         onFilterTextChange={setFilterText}
@@ -28,12 +28,15 @@ function SearchBar({
             <input
             type = "text" value = {filterText} placeholder="Search..."
             onChange={(e)=>onFilterTextChange(e.target.value)}/>
+            <br/>
+
         <lable>
-            <input  
+            <div class="input-group"><input  
                 type = "checkbox"
                 checked={isAvailable}
                 onChange = {(e)=>onIsAvailableChange(e.target.checked)}/>
-                Show available dishes
+                <p  className="text-description">Show available dishes</p>
+                </div>
         </lable>
         </form>
     );
